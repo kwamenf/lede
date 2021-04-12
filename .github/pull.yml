@@ -3,3 +3,4 @@ rules:
   - base: main
     upstream: kwamen:main
     mergeMethod: merge
+    mergeUnstable: false
