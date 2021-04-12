@@ -3,3 +3,4 @@ rules:
   - base: master
     upstream: coolsnowwolf:master
     mergeMethod: merge
+    mergeUnstable: true
