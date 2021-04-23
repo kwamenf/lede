@@ -12,5 +12,5 @@ rules:
 #       - kwamenf
 #     conflictReviewers:      # Optional, on merge conflict assign a reviewer
 #       - kwamenf
-# label: ":arrow_heading_down: pull"  # Optional
-# conflictLabel: "merge-conflict"     # Optional, on merge conflict assign a custom label, Default: merge-conflict
+label: ":arrow_heading_down: pull"  # Optional
+conflictLabel: "merge-conflict"     # Optional, on merge conflict assign a custom label, Default: merge-conflict
