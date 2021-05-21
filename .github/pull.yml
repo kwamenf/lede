@@ -1,16 +1,26 @@
+# version: "1"
+# rules:                      
+#   - base: master
+#     upstream: coolsnowwolf:master
+#     mergeMethod: merge
+#     mergeUnstable: true
+# #   - base: dev
+# #     upstream: master        # Required. Can be a branch in the same forked repo.
+# #     assignees:              # Optional
+# #       - kwamenf
+# #     reviewers:              # Optional
+# #       - kwamenf
+# #     conflictReviewers:      # Optional, on merge conflict assign a reviewer
+# #       - kwamenf
+# label: ":arrow_heading_down: pull"  # Optional
+# conflictLabel: "merge-conflict"     # Optional, on merge conflict assign a custom label, Default: merge-conflict
+
+
 version: "1"
-rules:                      
+rules:
   - base: master
     upstream: coolsnowwolf:master
-    mergeMethod: merge
-    mergeUnstable: true
-#   - base: dev
-#     upstream: master        # Required. Can be a branch in the same forked repo.
-#     assignees:              # Optional
-#       - kwamenf
-#     reviewers:              # Optional
-#       - kwamenf
-#     conflictReviewers:      # Optional, on merge conflict assign a reviewer
-#       - kwamenf
-label: ":arrow_heading_down: pull"  # Optional
-conflictLabel: "merge-conflict"     # Optional, on merge conflict assign a custom label, Default: merge-conflict
+    mergeMethod: squash
+  - base: docs
+    upstream: coolsnowwolf:master
+    mergeMethod: hardreset
